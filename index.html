@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+  <title>Daily Totals</title>
+
+  <!-- iOS / PWA essentials -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="manifest" href="manifest.json">
+  <!-- Optional: add apple-touch-icon PNGs later if you want custom icons -->
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app">
+    <!-- Tasks will be injected here -->
+    <div id="once-container" class="section"></div>
+    <hr class="divider" aria-hidden="true">
+    <div id="multiple-container" class="section"></div>
+  </main>
+
+  <footer id="total-bar" role="contentinfo" aria-live="polite">
+    <span>Total</span>
+    <strong id="running-total">0</strong>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    // Register service worker for offline & better “app” feel
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js').catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>
