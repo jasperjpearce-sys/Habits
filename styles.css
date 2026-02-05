@@ -1,0 +1,103 @@
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #eaeaea;
+  --shadow: rgba(0,0,0,0.06);
+  --accent: #000000;
+}
+
+* { box-sizing: border-box; }
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  padding: 12px;
+  padding-bottom: calc(72px + env(safe-area-inset-bottom));
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (min-width: 480px) {
+  .section { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 720px) {
+  .section { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 12px;
+  border: 1px solid var(--muted);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 2px var(--shadow);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.task:active {
+  transform: scale(0.98);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex: 0 0 12px;
+  border: 1px solid rgba(0,0,0,0.15); /* ensures White is visible */
+}
+
+.label {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.amount {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: #333;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid var(--muted);
+  margin: 14px 0;
+}
+
+/* Bottom total bar */
+#total-bar {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #fff;
+  border-top: 1px solid var(--muted);
+  padding: 14px 16px;
+  padding-bottom: calc(14px + env(safe-area-inset-bottom));
+  height: calc(56px + env(safe-area-inset-bottom));
+  box-shadow: 0 -4px 12px var(--shadow);
+  font-size: 18px;
+  max-width: 100%;
+}
+
+#running-total { font-size: 22px; }
