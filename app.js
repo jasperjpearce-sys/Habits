@@ -2,49 +2,49 @@
 // --------- Configuration (your list) ---------
 const TASKS = [
   // Blue (Hygiene / Tracking style)
-  { label: 'Teeth', amount: 0.125, type: 'Once', color: 'Blue' },
-  { label: 'Supplements', amount: 0.125, type: 'Once', color: 'Blue' },
-  { label: 'Weight', amount: 0.125, type: 'Once', color: 'Blue' },
-  { label: 'Bed', amount: 0.125, type: 'Once', color: 'Blue' },
+  { label: 'Teeth', amount: 0.25, type: 'Once', color: 'Blue' },
+  { label: 'Supplements', amount: 0.25, type: 'Once', color: 'Blue' },
+  { label: 'Weight', amount: 0.25, type: 'Once', color: 'Blue' },
+  { label: 'Bed', amount: 0.25, type: 'Once', color: 'Blue' },
 
   // Purple (Fitness)
-  { label: 'Strength', amount: 1, type: 'Once', color: 'Purple' },
-  { label: 'Cardio', amount: 1, type: 'Once', color: 'Purple' },
-  { label: 'Stretch', amount: 0.5, type: 'Once', color: 'Purple' },
-  { label: 'Sport', amount: 1, type: 'Once', color: 'Purple' },
+  { label: 'Exercise 30', amount: 3, type: 'Multiple', color: 'Purple' },
+  { label: 'Test', amount: 1, type: 'Once', color: 'Purple' },
+  { label: 'Stretch', amount: 1, type: 'Once', color: 'Purple' },
+ { label: 'Steps', amount: 1, type: 'Once', color: 'Purple' },
 
   // White (Work / practice)
 
-  { label: 'Work A/M', amount: 3, type: 'Once', color: 'White' },
-  { label: 'Work P/M', amount: 3, type: 'Once', color: 'White' },
-  { label: 'Tasks', amount: 0.25, type: 'Once', color: 'White' },
-  { label: 'Social', amount: 0.125, type: 'Once', color: 'White' },
-  { label: 'Organising', amount: 0.125, type: 'Once', color: 'White' },
-  { label: 'Projects', amount: 0.5, type: 'Once', color: 'White' },
-
-  // Green (Brain / practice)
- 
-  { label: 'Puzzles', amount: 0.125, type: 'Once', color: 'Green' },
-  { label: 'Memorisation', amount: 0.25, type: 'Once', color: 'Orange' },
-  { label: 'Anagram', amount: 0.125, type: 'Once', color: 'Green' },
-  { label: 'Arithmetic', amount: 0.125, type: 'Once', color: 'Green' },
-  { label: 'Cryptic', amount: 0.125, type: 'Once', color: 'Green' },
+  { label: 'Work 60', amount: 4, type: 'Multiple', color: 'White' },
+  { label: 'Article', amount: 1, type: 'Once', color: 'White' },
+  { label: 'Learning', amount: 1, type: 'Once', color: 'White' },
+  { label: 'Task Hour', amount: 4, type: 'Once', color: 'White' },
  
   // Orange (Hobbies)
-  { label: 'Article', amount: 0.25, type: 'Once', color: 'Orange' },
-  { label: 'Skills', amount: 0.125, type: 'Once', color: 'Orange' },
-  { label: 'Music', amount: 0.25, type: 'Once', color: 'Orange' },
-  { label: 'Duolingo', amount: 0.25, type: 'Once', color: 'Orange' },
+  { label: 'Puzzles', amount: 1, type: 'Once', color: 'Orange' },
+  { label: 'Skills', amount: 1, type: 'Once', color: 'Orange' },
+  { label: 'Music', amount: 1, type: 'Once', color: 'Orange' },
+  { label: 'Duolingo', amount: 1, type: 'Once', color: 'Orange' },
+  { label: 'Reading', amount: 1, type: 'Once', color: 'Orange' },
 
+    // Chores (Grey)
+{ label: 'Room', amount: 0.2, type: 'Once', color: 'Grey' },
+  { label: 'Laundry', amount: 0.2, type: 'Once', color: 'Grey' },
+  { label: 'Clean', amount: 0.2, type: 'Once', color: 'Grey' },
+  { label: 'Pack', amount: 0.2, type: 'Once', color: 'Grey' },
+  { label: 'Food', amount: 0.2, type: 'Once', color: 'Grey' },
   
   // Red (Vices) — Multiple (negative)
   { label: 'Misc', amount: 1, type: 'Multiple', color: 'White' },
   { label: 'Cigs', amount: -2, type: 'Multiple', color: 'Red' },
   { label: 'Alcohol', amount: -1, type: 'Multiple', color: 'Red' },
   { label: 'Spending', amount: -1, type: 'Multiple', color: 'Red' },
-  { label: 'Lies', amount: -2, type: 'Multiple', color: 'Red' },
+  { label: 'Lies', amount: -5, type: 'Multiple', color: 'Red' },
+  { label: 'Mean', amount: -5, type: 'Multiple', color: 'Red' },
+   { label: 'Naps', amount: -2, type: 'Multiple', color: 'Red' },
+  { label: '100 cals', amount: -1, type: 'Multiple', color: 'Red' },
   // SFW replacement for your original fifth Multiple item:
-  { label: 'Impulse', amount: -2, type: 'Multiple', color: 'Red' },
+  { label: 'Impulse', amount: -1, type: 'Multiple', color: 'Red' },
 ];
 
 // Color map
