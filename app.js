@@ -25,7 +25,7 @@ const TASKS = [
   { label: 'Skills', amount: 1, type: 'Once', color: 'Orange' },
   { label: 'Music', amount: 1, type: 'Once', color: 'Orange' },
   { label: 'Duolingo', amount: 1, type: 'Once', color: 'Orange' },
-  { label: 'Reading', amount: 1, type: 'Once', color: 'Orange' },
+  { label: 'Reading', amount: 2, type: 'Once', color: 'Orange' },
 
     // Chores (Grey)
 { label: 'Room', amount: 0.2, type: 'Once', color: 'Grey' },
