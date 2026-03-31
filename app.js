@@ -2,53 +2,41 @@
 // --------- Configuration (your list) ---------
 const TASKS = [
   // Blue (Hygiene / Tracking style)
-  { label: 'Phim', amount: 1, type: 'Once', color: 'Blue' },
-  { label: 'Hair', amount: 1, type: 'Once', color: 'Blue' },
-  { label: 'Teeth', amount: 1, type: 'Once', color: 'Blue' },
-  { label: 'Supplements', amount: 1, type: 'Once', color: 'Blue' },
-  { label: 'Room', amount: 1, type: 'Once', color: 'Blue' },
-  { label: 'Sleep', amount: 1, type: 'Once', color: 'Blue' },
-  { label: 'Weight', amount: 1, type: 'Once', color: 'Blue' },
-
-  // Green (Brain / practice)
-  { label: 'Duolingo', amount: 1, type: 'Once', color: 'Green' },
-  { label: 'Minute Cryptic', amount: 1, type: 'Once', color: 'Green' },
-  { label: 'Anagram', amount: 1, type: 'Once', color: 'Green' },
-  { label: 'Arithmetic', amount: 1, type: 'Once', color: 'Green' },
-  { label: 'Memorisation', amount: 1, type: 'Once', color: 'Green' },
+  { label: 'Teeth', amount: 0.125, type: 'Once', color: 'Blue' },
+  { label: 'Supplements', amount: 0.125, type: 'Once', color: 'Blue' },
+  { label: 'Weight', amount: 0.125, type: 'Once', color: 'Blue' },
+  { label: 'Bed', amount: 0.125, type: 'Once', color: 'Blue' },
 
   // Purple (Fitness)
-  { label: 'Cardio', amount: 1, type: 'Once', color: 'Purple' },
   { label: 'Strength', amount: 1, type: 'Once', color: 'Purple' },
-  { label: 'Stretch', amount: 1, type: 'Once', color: 'Purple' },
+  { label: 'Cardio', amount: 1, type: 'Once', color: 'Purple' },
+  { label: 'Stretch', amount: 0.5, type: 'Once', color: 'Purple' },
+  { label: 'Sport', amount: 1, type: 'Once', color: 'Purple' },
+
+  // White (Work / practice)
+
+  { label: 'Work A/M', amount: 3, type: 'Once', color: 'White' },
+  { label: 'Work P/M', amount: 3, type: 'Once', color: 'White' },
+  { label: 'Tasks', amount: 0.25, type: 'Once', color: 'White' },
+  { label: 'Social', amount: 0.125, type: 'Once', color: 'White' },
+  { label: 'Organising', amount: 0.125, type: 'Once', color: 'White' },
+  { label: 'Projects', amount: 0.5, type: 'Once', color: 'White' },
+
+  // Green (Brain / practice)
+ 
+  { label: 'Puzzles', amount: 0.125, type: 'Once', color: 'Green' },
+  { label: 'Memorisation', amount: 0.25, type: 'Once', color: 'Orange' },
+  { label: 'Anagram', amount: 0.125, type: 'Once', color: 'Green' },
+  { label: 'Arithmetic', amount: 0.125, type: 'Once', color: 'Green' },
+  { label: 'Cryptic', amount: 0.125, type: 'Once', color: 'Green' },
  
   // Orange (Hobbies)
-  { label: 'Music', amount: 1, type: 'Once', color: 'Orange' },
-  { label: 'Chess', amount: 1, type: 'Once', color: 'Orange' },
-  { label: 'Reading', amount: 1, type: 'Once', color: 'Orange' },
-  { label: 'Poker', amount: 1, type: 'Once', color: 'Orange' },
-  { label: 'Skill', amount: 1, type: 'Once', color: 'Orange' },
+  { label: 'Article', amount: 0.25, type: 'Once', color: 'Orange' },
+  { label: 'Skills', amount: 0.125, type: 'Once', color: 'Orange' },
+  { label: 'Music', amount: 0.25, type: 'Once', color: 'Orange' },
+  { label: 'Duolingo', amount: 0.25, type: 'Once', color: 'Orange' },
 
-  // White (Virtues)
-  { label: 'Integrity', amount: 1, type: 'Once', color: 'White' },
-  { label: 'Kindness', amount: 1, type: 'Once', color: 'White' },
-  { label: 'Diligence', amount: 1, type: 'Once', color: 'White' },
-  { label: 'Poise', amount: 1, type: 'Once', color: 'White' },
-  { label: 'Grit', amount: 1, type: 'Once', color: 'White' },
-
-  // Grey (Objectives)
-  { label: 'Objective A', amount: 1, type: 'Once', color: 'Grey' },
-  { label: 'Objective B', amount: 1, type: 'Once', color: 'Grey' },
-  { label: 'Objective C', amount: 1, type: 'Once', color: 'Grey' },
-  { label: 'Objective D', amount: 1, type: 'Once', color: 'Grey' },
-  { label: 'Objective E', amount: 1, type: 'Once', color: 'Grey' },
-
-  { label: 'Screentime', amount: 1, type: 'Once', color: 'Yellow' },
-  { label: 'Protein', amount: 1, type: 'Once', color: 'Yellow' },
-  { label: 'Calories', amount: 1, type: 'Once', color: 'Yellow' },
-  { label: 'Diary', amount: 1, type: 'Once', color: 'Yellow' },
-  { label: 'Work', amount: 1, type: 'Once', color: 'Yellow' },
-
+  
   // Red (Vices) — Multiple (negative)
   { label: 'Misc', amount: 1, type: 'Multiple', color: 'White' },
   { label: 'Cigs', amount: -2, type: 'Multiple', color: 'Red' },
